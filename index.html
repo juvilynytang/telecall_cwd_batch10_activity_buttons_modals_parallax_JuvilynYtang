@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--Font awesome icon-->
+            <script src="https://kit.fontawesome.com/3f65e83df2.js" crossorigin="anonymous"></script>
+
+            <!--Font awesome cdnjs-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!--Compiled and minified CSS-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            <!--link CSS-->
+            <link rel="stylesheet" href="buttons.css">
+    <title>Buttons</title>
+</head>
+<body>
+    <div class="slider fullscreen">
+        <ul class="slides">
+            <li>
+                <img class="responsive-img" src="one.jpg">
+                <div class="caption center-align">
+                    <h1 class="brown lighten-3">Coffee Adventure!</h1>
+                    <h3 class="black-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where Every Cup of Coffee Tells a Story<br>..........</h3>
+                    <br><br><br><br><br><br><br><br>
+                    <div class="button right-center">
+                        <a class="waves-effect waves-light btn-large transparent" href="home.html" style="height: 100px;width: 300px;"><p class="flow-text">See more</p></a>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <img class="responsive-img" src="two.jpg">
+                <div class="caption left-align">
+                    <h1>Coffee Buddy!</h1>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sharing coffee with loved ones can symbolize care and connection</h4>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <div class="button right-align">
+                        <a class="waves-effect waves-light btn-large transparent" style="height: 50px;width: 300px;" href="home.html">See more<i class="fa-solid fa-angles-right fa-2xl"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img class="responsive-img" src="three.jpg">
+                <div class="caption right-align">
+                    <h1>Taste me!</h1>
+                    <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We're serving different types of coffee collection</h4>
+                    <br><br><br><br><br><br><br><br><br><br>
+                    <div class="button left-align">
+                        <a class="waves-effect waves-teal btn-flat" style="height: 100px;width: 300px;" href="home.html"><p class="flow-text black">Find out more &gt; &gt; &gt;</p></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img class="responsive-img" src="four.jpg">
+                <div class="caption left-align">
+                    <h1>Order Now!</h1>
+                    <h4>Hurry and let your life start after a cup of coffee</h4>               
+                </div>
+            </li>
+        </ul>
+
+    </div>
+
+    
+
+
+
+
+
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // slider init
+                $('.slider').slider({
+                    height: 600,
+                    duration: 1000,
+                    interval: 8000,
+                });
+            // materialbox init
+                $('.materialboxed').materialbox({
+                    inDuration: 1000,
+                    outDuration: 1000,
+                    interval: 1000
+                });
+            // Tabs init
+                $('.tabs').tabs();
+            // Sidenav init
+                $('.sidenav').sidenav();
+            // Dropdown init
+                $(".dropdown-trigger").dropdown({
+                    hover: 'false'
+                });
+
+            });
+    </script>
+</body>
+</html>

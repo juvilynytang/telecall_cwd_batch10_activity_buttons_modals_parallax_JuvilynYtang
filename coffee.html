@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--Font awesome icon-->
+            <script src="https://kit.fontawesome.com/3f65e83df2.js" crossorigin="anonymous"></script>
+
+            <!--Font awesome cdnjs-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!--Compiled and minified CSS-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            <!--link CSS-->
+            <link rel="stylesheet" href="buttons.css">
+    <title>Coffee</title>
+</head>
+<body>
+    <div class="parallax-container">
+        <div class="parallax"><img src="coffee.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <nav class="responsive-nav transparent">
+                <div class="nav-wrapper">
+                                        <!-- Dropdown Structure -->
+                                        <ul id="dropdown2" class="dropdown-content black-text center-align">Contact Us<br>
+                                            <li><a href="#!">Rate Us</a></li>
+                                            <li><a href="#!">Follow Us</a></li>
+                                        </ul>
+                    <i class="fa-solid fa-mug-hot black-text" style="margin-left: 30px;">Coffee Adventure</i>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
+                    <a href="" class="sidenav-trigger" data-target="mobile-demo"><i class="fa-brands fa-elementor" style="color: #050505;"></i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-left: 30px">
+                        <li style="margin-left: 30px"><a href="buttons.html" class="black-text">Home</a></li>
+                        <li style="margin-left: 30px"><a href="home.html" class="black-text">Coffee</a></li>
+                        <li style="margin-left: 30px"><a href="#.html" class="black-text">Whipped Cream</a></li>
+                        <li style="margin-left: 30px"><a href="#" class="dropdown-trigger black-text" data-target="dropdown2">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        <!--Sidenav structure-->
+        <ul class="sidenav" id="mobile-demo">
+            <br>
+            <i class="fa-solid fa-mug-hot fa-2xl black-text" style="margin-left: 150px;"></i>
+            <li class="red-text text-red center">Coffee Adventure</li>
+            <li style="margin-left: 30px"><a href="buttons.html">Home</a></li>
+            <li style="margin-left: 30px"><a href="home.html">Coffee</a></li>
+            <li style="margin-left: 30px"><a href="#.html">Whipped Cream</a></li>
+            <li style="margin-left: 30px"><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="table">
+            <table>
+                <tr>
+                    <td class="responsive-img" style="height: 50%;width: 80%;">
+                        <img src="menu.jpg" class="responsive-img">
+                    </td>
+                    <td style="height: 50%;width: 20%;">
+                    <div>
+                        <form class="col s12 center-align" style="margin-right:50px;">
+                        <div class="row">
+                            <div class="input-field col s6" style="width: 300px;margin-left:10px;">
+                                <input id="full_name" type="text" class="validate">
+                                <label for="full_name" style="margin-right:60px;">Full Name</label>
+                            </div>
+                        </div>
+                            <div class="input-field col s6" style="width: 300px;">
+                                <input id="address" type="text" class="validate">
+                                <label for="address" style="margin-right:40px;">Address</label>
+                            </div>
+                        </form>
+                    </div>
+                    <form class="input-field col s12" style="width:300px;margin-left:10px;">
+                        <select>
+                            <option value="" disabled selected>Choose your order</option>
+                            <option value="1">Drip Coffee</option>
+                            <option value="2">Espresso</option>
+                            <option value="3">Americano</option>
+                            <option value="4">Macchiato</option>
+                            <option value="5">Cortado</option>
+                            <option value="6">Cappuccino</option>
+                            <option value="7">Latte</option>
+                            <option value="8">Mocha</option>
+                            <option value="9">Cold Brew</option>
+                            <option value="10">Tea</option>
+                            <option value="11">Iced Tea</option>
+                            <option value="12">Kombucha</option>
+                            <option value="13">Soda</option>
+                            <option value="14">Apple Juice</option>
+                        </select>
+                        <label>Menu</label>
+                    </div>
+
+                    <td>
+                        <!--button Modal trigger-->
+                        <div class="button">
+                            <a class="waves-effect waves-light btn modal-trigger center" href="#modal1" style="margin-top: 300px;">Submit Order</a>
+                        </div>    
+                            <!--Modal content-->
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <h6>Delivery take 15-30 minutes waiting time.</h6>
+                            </div>
+                                <div class="modal-footer">
+                                    <a href="#modal1" class="modal-close waves-effect waves green btn-flat">Okay</a>
+                                </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="coffee.jpg"></div>
+    </div>
+
+
+
+
+        <!--Jquery CDN-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.parallax').parallax();
+                // slider init
+                $('.slider').slider({
+                duration: 1000,
+                interval: 8000
+                });
+                $('select').formSelect();
+                $('.modal').modal({});
+                M.updateTextFields();
+                $(".dropdown-trigger").dropdown({
+                hover: 'false'
+                });
+                // Sidenav init
+                $('.sidenav').sidenav();
+                });
+        </script>
+</body>
+</html>
